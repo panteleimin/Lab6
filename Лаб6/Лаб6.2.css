@@ -1,0 +1,37 @@
+
+.door{
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 100px;
+    background-color: purple;
+    transition: clip-path 0.4s ease;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 2;
+}
+
+.text{
+    display: inline-block;
+    position: relative;
+    font-size: large;
+    font-weight: bold;
+    right: 25px;
+    bottom: 40px;
+    z-index: 1;
+}
+
+.door2{
+    right: 45px;
+}
+
+.door1:hover {
+      clip-path: polygon(0 0, 100% 30%, 100% 70%, 0% 100%);
+      right: 30px;
+      transform: rotate(90%);
+    }
+
+.door2:hover {
+      clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 70%);
+      right: 30px;
+      transform: rotate(90%);
+    }
